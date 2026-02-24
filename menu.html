@@ -16,10 +16,34 @@
   <style>
     /* Additional Menu-specific styles */
     .menu-hero {
-      background: linear-gradient(135deg, var(--matcha-pale) 0%, var(--matcha-light) 100%);
+      background: linear-gradient(135deg, var(--matcha-subtle) 0%, var(--matcha-pale) 100%);
       padding: 8rem 0 4rem;
       text-align: center;
       margin-top: 72px;
+    }
+
+    .product-line-section {
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--bg-beige);
+    }
+
+    .product-line-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .product-line-title {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      color: var(--accent-black);
+      margin-bottom: 1rem;
+      font-weight: 400;
+      font-family: var(--font-heading);
+    }
+
+    .product-line-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      font-weight: 300;
     }
 
     .filter-bar {
@@ -64,6 +88,7 @@
     <div class="nav-container">
       <a href="index.html" class="nav-logo">MATCHA TOWN</a>
       <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="location.html">Location</a></li>
@@ -80,10 +105,9 @@
   <!-- MENU HERO -->
   <section class="menu-hero">
     <div class="container">
-      <h1 style="color: var(--matcha-deep); margin-bottom: 1rem;">Our Menu</h1>
-      <p class="lead-text" style="max-width: 700px; margin: 0 auto; color: var(--text-primary);">
-        From our signature 5-level matcha system to artisanal gelato and celebration cakes,
-        discover flavors that awaken the senses.
+      <h1 style="color: var(--accent-black); margin-bottom: 1.25rem; font-weight: 400;">Our Menu</h1>
+      <p style="max-width: 650px; margin: 0 auto; color: var(--text-secondary); font-size: 1.15rem; line-height: 1.7;">
+        Matcha Gelato · Signature Drinks · Celebration Cakes
       </p>
     </div>
   </section>
@@ -206,28 +230,24 @@
   </section>
 
   <!-- PRODUCT MENU -->
-  <section class="section" id="products">
-    <div class="container">
-      <div class="text-center mb-xl">
-        <h2>Full Menu</h2>
-      </div>
+  <section style="padding: 0; background-color: var(--bg-cream);">
+    <div class="container" style="max-width: 1200px;">
 
-      <!-- Filter Bar -->
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="gelato">Gelato</button>
-        <button class="filter-btn" data-filter="drinks">Drinks</button>
-        <button class="filter-btn" data-filter="cakes">Cakes</button>
-      </div>
+      <!-- ========== GELATO SECTION ========== -->
+      <div class="product-line-section" id="gelato">
+        <div class="product-line-header">
+          <h2 class="product-line-title">Matcha Gelato</h2>
+          <p class="product-line-subtitle">Five Intensity Levels · Artisanal Craft · Italian Tradition</p>
+        </div>
 
-      <!-- Products Grid -->
-      <div class="grid grid-3">
+        <!-- Gelato Products Grid -->
+        <div class="grid grid-3" style="gap: 2rem;">
         <!-- GELATO PRODUCTS -->
         <!-- NO.1 Jasmine Matcha Gelato -->
         <div class="card product-card" data-category="gelato">
           <img
-            src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80"
-            alt="NO.1 Jasmine Matcha Gelato"
+            src="images/products/gelato/matcha-gelato-1.jpg"
+            alt="NO.1 Jasmine Matcha Gelato in Pantone 2300U cup"
             class="card-image"
           >
           <div class="card-content">
@@ -240,7 +260,7 @@
         <!-- NO.3 Matcha Gelato -->
         <div class="card product-card" data-category="gelato">
           <img
-            src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=600&q=80"
+            src="images/products/gelato/matcha-gelato-2.jpg"
             alt="NO.3 Matcha Gelato"
             class="card-image"
           >
@@ -254,7 +274,7 @@
         <!-- NO.5 Matcha Gelato -->
         <div class="card product-card" data-category="gelato">
           <img
-            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80"
+            src="images/products/gelato/gelato-detail-1.jpg"
             alt="NO.5 Matcha Gelato"
             class="card-image"
           >
@@ -268,7 +288,7 @@
         <!-- Hojicha Gelato -->
         <div class="card product-card" data-category="gelato">
           <img
-            src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80"
+            src="images/products/gelato/gelato-detail-2.jpg"
             alt="Hojicha Gelato"
             class="card-image"
           >
@@ -282,7 +302,7 @@
         <!-- Pistachio Gelato -->
         <div class="card product-card" data-category="gelato">
           <img
-            src="https://images.unsplash.com/photo-1582793988951-9aed5509eb97?w=600&q=80"
+            src="images/products/gelato/accessory-1.jpg"
             alt="Pistachio Gelato"
             class="card-image"
           >
@@ -296,7 +316,7 @@
         <!-- Black Sesame Gelato -->
         <div class="card product-card" data-category="gelato">
           <img
-            src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=600&q=80"
+            src="images/products/gelato/accessory-2.jpg"
             alt="Black Sesame Gelato"
             class="card-image"
           >
@@ -306,12 +326,23 @@
             <p class="card-price">$7.95</p>
           </div>
         </div>
+        </div><!-- End Gelato Grid -->
+      </div><!-- End Gelato Section -->
 
+      <!-- ========== DRINKS SECTION ========== -->
+      <div class="product-line-section" id="drinks" style="background-color: var(--bg-white);">
+        <div class="product-line-header">
+          <h2 class="product-line-title">Signature Drinks</h2>
+          <p class="product-line-subtitle">Matcha Lattes · Cheese Foam · Refreshing Floats</p>
+        </div>
+
+        <!-- Drinks Products Grid -->
+        <div class="grid grid-3" style="gap: 2rem;">
         <!-- DRINKS -->
         <!-- Matcha Latte -->
         <div class="card product-card" data-category="drinks">
           <img
-            src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80"
+            src="images/products/drinks/matcha-drink-1.jpg"
             alt="Matcha Latte"
             class="card-image"
           >
@@ -325,7 +356,7 @@
         <!-- Salted Cheese Matcha -->
         <div class="card product-card" data-category="drinks">
           <img
-            src="https://images.unsplash.com/photo-1578374173705-150725e3abf0?w=600&q=80"
+            src="images/products/drinks/matcha-drink-2.jpg"
             alt="Salted Cheese Matcha"
             class="card-image"
           >
@@ -339,7 +370,7 @@
         <!-- Jasmine Matcha Cheese -->
         <div class="card product-card" data-category="drinks">
           <img
-            src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80"
+            src="images/products/drinks/matcha-drink-3.jpg"
             alt="Jasmine Matcha Cheese"
             class="card-image"
           >
@@ -353,7 +384,7 @@
         <!-- Coconut Matcha Float -->
         <div class="card product-card" data-category="drinks">
           <img
-            src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80"
+            src="images/products/drinks/guava-drink.jpg"
             alt="Coconut Matcha Float"
             class="card-image"
           >
@@ -363,7 +394,18 @@
             <p class="card-price">$8.95</p>
           </div>
         </div>
+        </div><!-- End Drinks Grid -->
+      </div><!-- End Drinks Section -->
 
+      <!-- ========== CAKES SECTION ========== -->
+      <div class="product-line-section" id="cakes">
+        <div class="product-line-header">
+          <h2 class="product-line-title">Celebration Cakes</h2>
+          <p class="product-line-subtitle">Gelato Layered · For Special Moments · Serves 6-8</p>
+        </div>
+
+        <!-- Cakes Products Grid -->
+        <div class="grid grid-3" style="gap: 2rem;">
         <!-- CAKES -->
         <!-- Matcha Pistachio Cake -->
         <div class="card product-card" data-category="cakes">
@@ -406,9 +448,11 @@
             <p class="card-price">$46.95</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+        </div><!-- End Cakes Grid -->
+      </div><!-- End Cakes Section -->
+
+    </div><!-- End Container -->
+  </section><!-- End Product Menu Section -->
 
   <!-- CTA SECTION -->
   <section class="section bg-white text-center">

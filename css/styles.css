@@ -5,22 +5,27 @@
 
 /* ===== CSS VARIABLES (Design Tokens) ===== */
 :root {
-  /* Color Palette - Warm Minimalism */
-  --bg-cream: #F7F1EE;
+  /* Color Palette - Refined Minimalism (Store-inspired) */
+  --bg-cream: #FAF7F4;           /* Soft cream background */
+  --bg-warm: #F5F0EC;            /* Warm secondary background */
+  --bg-beige: #E8E3DD;           /* Beige accent background */
   --bg-white: #FFFFFF;
-  --text-primary: #2C2C2C;
-  --text-secondary: #6B6B6B;
-  --text-light: #9A9A9A;
 
-  /* Brand Colors */
-  --matcha-deep: #3A4E3D;
-  --matcha-medium: #5C7A5F;
-  --matcha-light: #8BA888;
-  --matcha-pale: #C8D5C7;
+  --text-primary: #3D3430;       /* Deep warm brown */
+  --text-secondary: #706A65;     /* Medium warm grey */
+  --text-light: #A89F99;         /* Light warm grey */
 
-  /* Accent Colors */
-  --accent-gold: #D4A574;
-  --accent-terracotta: #E19633;
+  /* Matcha Colors - Natural & Refined */
+  --matcha-deep: #5C7A5F;        /* Deep natural matcha */
+  --matcha-medium: #7A9B7F;      /* Authentic matcha tone */
+  --matcha-light: #A8C4A5;       /* Light matcha */
+  --matcha-pale: #D4E0D3;        /* Pale matcha for backgrounds */
+  --matcha-subtle: #E8EDE7;      /* Subtle matcha hint */
+
+  /* Accent Colors - Wood & Earth Tones */
+  --accent-wood: #B5A592;        /* Warm wood tone */
+  --accent-walnut: #8B7D6B;      /* Rich walnut */
+  --accent-black: #1A1816;       /* True black for emphasis */
 
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, serif;
@@ -163,12 +168,12 @@ p {
   right: 0;
   background-color: var(--bg-cream);
   z-index: 1000;
-  border-bottom: 1px solid rgba(44, 44, 44, 0.1);
+  border-bottom: 1px solid rgba(61, 52, 48, 0.08);
   transition: all var(--transition-normal);
 }
 
 .nav.scrolled {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 16px rgba(61, 52, 48, 0.06);
 }
 
 .nav-container {
@@ -184,7 +189,8 @@ p {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   letter-spacing: 0.05em;
-  color: var(--matcha-deep);
+  color: var(--accent-black);
+  font-weight: 500;
 }
 
 .nav-links {
@@ -242,9 +248,9 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--matcha-medium);
+  background-color: var(--accent-black);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(58, 78, 61, 0.3);
+  box-shadow: 0 4px 16px rgba(92, 122, 95, 0.25);
 }
 
 .btn-outline {
@@ -540,7 +546,7 @@ p {
 
 /* ===== FOOTER ===== */
 .footer {
-  background-color: var(--text-primary);
+  background-color: var(--accent-black);
   color: var(--bg-cream);
   padding: var(--spacing-xl) 0 var(--spacing-md);
 }
