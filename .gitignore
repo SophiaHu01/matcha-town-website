@@ -29,8 +29,11 @@ Temporary Items
 *.swo
 *~
 
-# Optional: Ignore large image files during development
-# Uncomment if you want to keep images out of Git
-# images/*.jpg
-# images/*.png
-# images/*.jpeg
+# Ignore source photo folders (too large for git)
+Used Photos/
+Used Videos/
+MACHATOWN模特图1124/
+饮品场景图/
+
+# Keep optimized web images only
+!images/
