@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visit MATCHA TOWN in Cupertino, CA. Location, hours, and contact information.">
+  <title>Location | MATCHA TOWN</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .location-hero {
+      background: var(--matcha-deep);
+      color: var(--bg-cream);
+      padding: 8rem 0 4rem;
+      text-align: center;
+      margin-top: 72px;
+    }
+
+    .info-card {
+      background-color: var(--bg-white);
+      padding: var(--spacing-lg);
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--spacing-md);
+      margin-bottom: var(--spacing-md);
+      padding-bottom: var(--spacing-md);
+      border-bottom: 1px solid var(--matcha-pale);
+    }
+
+    .info-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      background-color: var(--matcha-pale);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.25rem;
+    }
+
+    .info-content h4 {
+      margin-bottom: 0.25rem;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+    }
+
+    .info-content p {
+      margin-bottom: 0;
+      color: var(--text-primary);
+      font-size: 1.05rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--spacing-md);
+    }
+
+    .gallery-item {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform var(--transition-fast);
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.02);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 450px;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      background-color: var(--matcha-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .map-placeholder {
+      text-align: center;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">MATCHA TOWN</a>
+      <ul class="nav-links">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="menu.html" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">Order</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- LOCATION HERO -->
+  <section class="location-hero">
+    <div class="container">
+      <h1 style="margin-bottom: 1rem;">Visit Us</h1>
+      <p class="lead-text" style="max-width: 700px; margin: 0 auto;">
+        Experience refined simplicity with intentional detail in the heart of Cupertino
+      </p>
+    </div>
+  </section>
+
+  <!-- LOCATION INFO -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+        <!-- Info Cards -->
+        <div>
+          <h2 class="mb-lg">Cupertino</h2>
+
+          <div class="info-card mb-lg">
+            <!-- Address -->
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-content">
+                <h4>Address</h4>
+                <p>
+                  10123 N Wolfe Road<br>
+                  Cupertino, CA 95014
+                </p>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="info-item">
+              <div class="info-icon">🕐</div>
+              <div class="info-content">
+                <h4>Hours</h4>
+                <p>
+                  Monday - Friday: 10:00 AM - 9:00 PM<br>
+                  Saturday - Sunday: 9:00 AM - 10:00 PM
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-content">
+                <h4>Phone</h4>
+                <p><a href="tel:+14089876543">(408) 987-6543</a></p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <p><a href="mailto:cupertino@matchatown.com">cupertino@matchatown.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a
+              href="https://www.google.com/maps/search/Cupertino+CA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Get Directions
+            </a>
+            <a href="menu.html" class="btn btn-outline">View Menu</a>
+          </div>
+
+          <!-- Parking Info -->
+          <div style="margin-top: 2rem; padding: var(--spacing-md); background-color: var(--matcha-pale); border-radius: var(--border-radius);">
+            <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--matcha-deep);">
+              🅿️ Parking Information
+            </h4>
+            <p style="margin: 0; font-size: 0.95rem; color: var(--text-secondary);">
+              Ample street parking available. Parking structure entrance on North side.
+            </p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div>
+          <!-- TODO: Replace with actual Google Maps embed -->
+          <div class="map-container">
+            <div class="map-placeholder">
+              <h3 style="color: var(--text-secondary); margin-bottom: 1rem;">Map Preview</h3>
+              <p style="margin-bottom: 1.5rem;">
+                Replace this with Google Maps embed using actual address
+              </p>
+              <a
+                href="https://www.google.com/maps/search/Cupertino+CA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                Open in Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Google Maps Embed Code Example (uncomment when you have actual address) -->
+          <!--
+          <iframe
+            src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE_HERE"
+            width="100%"
+            height="450"
+            style="border:0; border-radius: 4px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACE GALLERY -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="text-center mb-xl">
+        <h2>Our Space</h2>
+        <p class="lead-text">
+          Refined simplicity with intentional detail
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- TODO: Replace all with actual Cupertino store photos -->
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80"
+            alt="MATCHA TOWN Cupertino - Interior"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=600&q=80"
+            alt="MATCHA TOWN Cupertino - Counter"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=600&q=80"
+            alt="MATCHA TOWN Cupertino - Seating Area"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
+            alt="MATCHA TOWN Cupertino - Display"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80"
+            alt="MATCHA TOWN Cupertino - Exterior"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80"
+            alt="MATCHA TOWN Cupertino - Details"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN CONCEPT -->
+  <section class="section">
+    <div class="container-narrow">
+      <div class="text-center mb-lg">
+        <h2>Design Concept</h2>
+      </div>
+
+      <p class="lead-text text-center mb-lg">
+        The space is built on a foundation of clean geometry and natural materials.
+      </p>
+
+      <div class="grid grid-2" style="gap: 3rem;">
+        <div>
+          <h4 style="color: var(--matcha-deep); margin-bottom: var(--spacing-sm);">
+            Intentional Composition
+          </h4>
+          <p>
+            Every element is positioned to create visual rhythm and spatial harmony. Wood,
+            marble, and green tones work in concert, each reinforcing the others. The layout
+            balances openness with definition, allowing the space to feel expansive yet intimate.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color: var(--matcha-deep); margin-bottom: var(--spacing-sm);">
+            Elevated & Effortless
+          </h4>
+          <p>
+            The space balances refinement with accessibility. The display counter faces
+            comfortable leather seating, creating a natural sightline between product and guest.
+            Green leather seating invites guests to linger and enjoy.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-xl">
+        <p class="lead-text">
+          Details are minimal but purposeful, creating an environment where nothing feels
+          excessive or lacking. It's crafted for those who appreciate thoughtful detail,
+          where sophisticated taste meets genuine comfort.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section bg-white text-center">
+    <div class="container-narrow">
+      <h2 class="mb-md">We Can't Wait to Serve You</h2>
+      <p class="lead-text mb-lg">
+        Experience matcha reimagined in our thoughtfully designed space.
+      </p>
+      <a href="menu.html" class="btn btn-primary">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Matcha Town</h4>
+          <p style="color: var(--matcha-pale);">
+            Redefining matcha for North America through innovative flavors,
+            premium craft, and new rituals.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="menu.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Visit Us</h4>
+          <p style="color: var(--matcha-pale);">
+            Cupertino, CA<br>
+            <a href="tel:+1234567890">+1 (234) 567-890</a><br>
+            <a href="mailto:hello@matchatown.com">hello@matchatown.com</a>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Hours</h4>
+          <p style="color: var(--matcha-pale);">
+            Monday - Friday: 10am - 9pm<br>
+            Saturday - Sunday: 9am - 10pm
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MATCHA TOWN. All rights reserved. | <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore MATCHA TOWN's menu - Five matcha intensity levels, artisanal gelato, signature drinks, and celebration cakes.">
+  <title>Menu | MATCHA TOWN</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Additional Menu-specific styles */
+    .menu-hero {
+      background: linear-gradient(135deg, var(--matcha-pale) 0%, var(--matcha-light) 100%);
+      padding: 8rem 0 4rem;
+      text-align: center;
+      margin-top: 72px;
+    }
+
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 0.75rem 1.5rem;
+      background-color: transparent;
+      color: var(--text-secondary);
+      border: 1px solid var(--matcha-pale);
+      border-radius: var(--border-radius);
+      font-weight: 500;
+      transition: all var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--matcha-deep);
+      color: var(--matcha-deep);
+    }
+
+    .filter-btn.active {
+      background-color: var(--matcha-deep);
+      color: white;
+      border-color: var(--matcha-deep);
+    }
+
+    .product-card {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">MATCHA TOWN</a>
+      <ul class="nav-links">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="menu.html" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">Order</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MENU HERO -->
+  <section class="menu-hero">
+    <div class="container">
+      <h1 style="color: var(--matcha-deep); margin-bottom: 1rem;">Our Menu</h1>
+      <p class="lead-text" style="max-width: 700px; margin: 0 auto; color: var(--text-primary);">
+        From our signature 5-level matcha system to artisanal gelato and celebration cakes,
+        discover flavors that awaken the senses.
+      </p>
+    </div>
+  </section>
+
+  <!-- 5 MATCHA LEVELS INTERACTIVE SECTION -->
+  <section class="matcha-levels">
+    <div class="container">
+      <div class="text-center mb-xl">
+        <h2>The 5 Matcha Levels</h2>
+        <p class="lead-text" style="max-width: 600px; margin: 0 auto;">
+          Choose your intensity. From delicate and floral to bold and ceremonial,
+          find the perfect matcha for your mood.
+        </p>
+      </div>
+
+      <!-- Level Selector Buttons -->
+      <div class="level-selector">
+        <button class="level-btn" data-level="1" aria-label="Matcha Level 1">
+          <span style="position: relative; z-index: 1;">NO.1</span>
+        </button>
+        <button class="level-btn" data-level="2" aria-label="Matcha Level 2">
+          <span style="position: relative; z-index: 1;">NO.2</span>
+        </button>
+        <button class="level-btn active" data-level="3" aria-label="Matcha Level 3">
+          <span style="position: relative; z-index: 1;">NO.3</span>
+        </button>
+        <button class="level-btn" data-level="4" aria-label="Matcha Level 4">
+          <span style="position: relative; z-index: 1;">NO.4</span>
+        </button>
+        <button class="level-btn" data-level="5" aria-label="Matcha Level 5">
+          <span style="position: relative; z-index: 1;">NO.5</span>
+        </button>
+      </div>
+
+      <!-- Level Content (Changes based on selection) -->
+      <div class="level-content">
+        <!-- Level 1 -->
+        <div class="level-detail" data-level="1">
+          <h3 class="level-name">NO.1 Jasmine Matcha</h3>
+          <p class="level-concentration">Matcha Concentration: 3.5%</p>
+          <p class="level-description">
+            Light and floral. Perfect for those new to matcha. The delicate jasmine notes
+            complement the subtle matcha flavor, creating a refreshing and approachable
+            introduction to our matcha journey.
+          </p>
+          <div class="level-tags">
+            <span class="tag">Beginners</span>
+            <span class="tag">Floral</span>
+            <span class="tag">Light Caffeine</span>
+            <span class="tag">Refreshing</span>
+          </div>
+        </div>
+
+        <!-- Level 2 -->
+        <div class="level-detail" data-level="2">
+          <h3 class="level-name">NO.2 Matcha</h3>
+          <p class="level-concentration">Matcha Concentration: 6.5%</p>
+          <p class="level-description">
+            Balanced and smooth. A harmonious blend that showcases matcha's natural sweetness
+            while maintaining gentle vegetal notes. Ideal for daily enjoyment.
+          </p>
+          <div class="level-tags">
+            <span class="tag">Balanced</span>
+            <span class="tag">Smooth</span>
+            <span class="tag">Medium Caffeine</span>
+            <span class="tag">Daily Favorite</span>
+          </div>
+        </div>
+
+        <!-- Level 3 (Default Active) -->
+        <div class="level-detail active" data-level="3">
+          <h3 class="level-name">NO.3 Matcha</h3>
+          <p class="level-concentration">Matcha Concentration: 10.5%</p>
+          <p class="level-description">
+            Rich and vibrant. The true character of matcha emerges—earthy, slightly bitter,
+            with a lingering sweetness. A favorite among matcha enthusiasts.
+          </p>
+          <div class="level-tags">
+            <span class="tag">Rich</span>
+            <span class="tag">Authentic</span>
+            <span class="tag">Energizing</span>
+            <span class="tag">Traditional</span>
+          </div>
+        </div>
+
+        <!-- Level 4 -->
+        <div class="level-detail" data-level="4">
+          <h3 class="level-name">NO.4 Matcha</h3>
+          <p class="level-concentration">Matcha Concentration: 13.5%</p>
+          <p class="level-description">
+            Bold and intense. Deep umami flavors with pronounced vegetal notes. For those who
+            appreciate matcha's full complexity and natural bitterness.
+          </p>
+          <div class="level-tags">
+            <span class="tag">Bold</span>
+            <span class="tag">Intense</span>
+            <span class="tag">High Caffeine</span>
+            <span class="tag">Complex</span>
+          </div>
+        </div>
+
+        <!-- Level 5 -->
+        <div class="level-detail" data-level="5">
+          <h3 class="level-name">NO.5 Matcha</h3>
+          <p class="level-concentration">Matcha Concentration: 16.5%</p>
+          <p class="level-description">
+            Profound and ceremonial. The highest concentration we offer. An immersive matcha
+            experience with powerful umami, deep earthiness, and the meditative quality of
+            traditional matcha ceremony.
+          </p>
+          <div class="level-tags">
+            <span class="tag">Ceremonial</span>
+            <span class="tag">Maximum Caffeine</span>
+            <span class="tag">For Connoisseurs</span>
+            <span class="tag">Pure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT MENU -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="text-center mb-xl">
+        <h2>Full Menu</h2>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="gelato">Gelato</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+        <button class="filter-btn" data-filter="cakes">Cakes</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-3">
+        <!-- GELATO PRODUCTS -->
+        <!-- NO.1 Jasmine Matcha Gelato -->
+        <div class="card product-card" data-category="gelato">
+          <img
+            src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80"
+            alt="NO.1 Jasmine Matcha Gelato"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">NO.1 Jasmine Matcha</h4>
+            <p class="card-description">Light matcha gelato with delicate jasmine notes</p>
+            <p class="card-price">$6.95</p>
+          </div>
+        </div>
+
+        <!-- NO.3 Matcha Gelato -->
+        <div class="card product-card" data-category="gelato">
+          <img
+            src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=600&q=80"
+            alt="NO.3 Matcha Gelato"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">NO.3 Matcha</h4>
+            <p class="card-description">Rich and authentic matcha gelato</p>
+            <p class="card-price">$7.95</p>
+          </div>
+        </div>
+
+        <!-- NO.5 Matcha Gelato -->
+        <div class="card product-card" data-category="gelato">
+          <img
+            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80"
+            alt="NO.5 Matcha Gelato"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">NO.5 Matcha</h4>
+            <p class="card-description">Ceremonial grade matcha gelato</p>
+            <p class="card-price">$9.95</p>
+          </div>
+        </div>
+
+        <!-- Hojicha Gelato -->
+        <div class="card product-card" data-category="gelato">
+          <img
+            src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80"
+            alt="Hojicha Gelato"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Hojicha</h4>
+            <p class="card-description">Roasted green tea with caramel notes</p>
+            <p class="card-price">$7.95</p>
+          </div>
+        </div>
+
+        <!-- Pistachio Gelato -->
+        <div class="card product-card" data-category="gelato">
+          <img
+            src="https://images.unsplash.com/photo-1582793988951-9aed5509eb97?w=600&q=80"
+            alt="Pistachio Gelato"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Pistachio</h4>
+            <p class="card-description">Sicilian pistachios, delicate and creamy</p>
+            <p class="card-price">$8.95</p>
+          </div>
+        </div>
+
+        <!-- Black Sesame Gelato -->
+        <div class="card product-card" data-category="gelato">
+          <img
+            src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=600&q=80"
+            alt="Black Sesame Gelato"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Black Sesame</h4>
+            <p class="card-description">Nutty and aromatic Asian classic</p>
+            <p class="card-price">$7.95</p>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <!-- Matcha Latte -->
+        <div class="card product-card" data-category="drinks">
+          <img
+            src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80"
+            alt="Matcha Latte"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Matcha Latte</h4>
+            <p class="card-description">Your choice of matcha level with steamed milk</p>
+            <p class="card-price">$6.50</p>
+          </div>
+        </div>
+
+        <!-- Salted Cheese Matcha -->
+        <div class="card product-card" data-category="drinks">
+          <img
+            src="https://images.unsplash.com/photo-1578374173705-150725e3abf0?w=600&q=80"
+            alt="Salted Cheese Matcha"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Salted Cheese Matcha</h4>
+            <p class="card-description">Signature salted cheese foam over matcha</p>
+            <p class="card-price">$7.95</p>
+          </div>
+        </div>
+
+        <!-- Jasmine Matcha Cheese -->
+        <div class="card product-card" data-category="drinks">
+          <img
+            src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80"
+            alt="Jasmine Matcha Cheese"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Jasmine Matcha Cheese</h4>
+            <p class="card-description">Floral jasmine meets creamy cheese foam</p>
+            <p class="card-price">$8.50</p>
+          </div>
+        </div>
+
+        <!-- Coconut Matcha Float -->
+        <div class="card product-card" data-category="drinks">
+          <img
+            src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80"
+            alt="Coconut Matcha Float"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Coconut Matcha Float</h4>
+            <p class="card-description">Refreshing coconut with matcha gelato</p>
+            <p class="card-price">$8.95</p>
+          </div>
+        </div>
+
+        <!-- CAKES -->
+        <!-- Matcha Pistachio Cake -->
+        <div class="card product-card" data-category="cakes">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80"
+            alt="Matcha Pistachio Cake"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Matcha Pistachio Cake</h4>
+            <p class="card-description">Layered gelato cake, serves 6-8</p>
+            <p class="card-price">$42.95</p>
+          </div>
+        </div>
+
+        <!-- Berry White Champaca Cake -->
+        <div class="card product-card" data-category="cakes">
+          <img
+            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80"
+            alt="Berry White Champaca Cake"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Berry White Champaca</h4>
+            <p class="card-description">Floral and fruity celebration cake</p>
+            <p class="card-price">$45.95</p>
+          </div>
+        </div>
+
+        <!-- Chocolate Matcha Cake -->
+        <div class="card product-card" data-category="cakes">
+          <img
+            src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=600&q=80"
+            alt="Chocolate Matcha Cake"
+            class="card-image"
+          >
+          <div class="card-content">
+            <h4 class="card-title">Chocolate Matcha</h4>
+            <p class="card-description">Rich chocolate with matcha layers</p>
+            <p class="card-price">$46.95</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section bg-white text-center">
+    <div class="container-narrow">
+      <h2 class="mb-md">Ready to order?</h2>
+      <p class="lead-text mb-lg">Visit us in Cupertino or place an order for pickup.</p>
+      <a href="location.html" class="btn btn-primary">Visit Our Location</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Matcha Town</h4>
+          <p style="color: var(--matcha-pale);">
+            Redefining matcha for North America through innovative flavors,
+            premium craft, and new rituals.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="menu.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Visit Us</h4>
+          <p style="color: var(--matcha-pale);">
+            Cupertino, CA<br>
+            <a href="tel:+1234567890">+1 (234) 567-890</a><br>
+            <a href="mailto:hello@matchatown.com">hello@matchatown.com</a>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Hours</h4>
+          <p style="color: var(--matcha-pale);">
+            Monday - Friday: 10am - 9pm<br>
+            Saturday - Sunday: 9am - 10pm
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MATCHA TOWN. All rights reserved. | <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/menu-interactive.js"></script>
+
+</body>
+</html>
