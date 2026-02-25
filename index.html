@@ -35,205 +35,186 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <!-- HERO SECTION - Full Screen Impact -->
+  <section style="height: 100vh; position: relative; overflow: hidden; margin-top: 72px; display: flex; align-items: center; justify-content: center;">
     <img
-      src="images/hero/drinks-hero.jpg"
-      alt="Matcha Town artisanal creations"
-      class="hero-bg"
+      src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=1920&q=85"
+      alt="Matcha artistry"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
     >
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1 class="hero-title" style="color: var(--accent-black);">MATCHA TOWN</h1>
-      <p class="hero-subtitle" style="font-size: clamp(1rem, 2.5vw, 1.35rem); font-weight: 400; color: var(--text-primary);">
-        Artisanal Matcha Gelato · Signature Drinks · Celebration Cakes
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(250,247,244,0.15) 0%, rgba(250,247,244,0.75) 100%); z-index: 2;"></div>
+    <div style="position: relative; z-index: 3; text-align: center; padding: 0 2rem;">
+      <h1 style="font-size: clamp(3.5rem, 10vw, 8rem); font-family: var(--font-heading); color: var(--accent-black); margin-bottom: 1.5rem; font-weight: 300; letter-spacing: 0.02em;">
+        MATCHA TOWN
+      </h1>
+      <p style="font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--text-primary); font-weight: 300; letter-spacing: 0.05em;">
+        Artisanal Matcha. Five Levels of Intensity.
       </p>
-      <p style="margin: 2rem 0; font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 1.5rem auto;">
-        Five matcha intensity levels. Crafted with precision. Designed for moments.
-      </p>
-      <a href="menu.html" class="btn btn-primary" style="margin-top: 2rem;">Explore Menu</a>
     </div>
   </section>
 
-  <!-- BRAND ESSENCE - Simplified -->
-  <section class="section" style="padding: 4rem 0; background-color: var(--bg-white);">
-    <div class="container-narrow text-center">
-      <h2 style="font-size: clamp(1.75rem, 3.5vw, 2.25rem); color: var(--accent-black); margin-bottom: 1.5rem; font-weight: 400;">
-        Matcha, Reimagined.
+  <!-- BRAND ESSENCE - Ultra Minimal -->
+  <section style="padding: 8rem 0; background-color: var(--bg-cream);">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 0 2rem;">
+      <p style="font-size: clamp(1.5rem, 3vw, 2rem); color: var(--text-secondary); line-height: 1.6; font-weight: 300; font-family: var(--font-heading);">
+        Where Japanese tradition meets<br>modern artisanal craft.
+      </p>
+    </div>
+  </section>
+
+  <!-- THREE PRODUCT LINES - Full Width Gallery -->
+  <section style="padding: 0; background-color: var(--bg-white);">
+    <!-- Section Title -->
+    <div style="text-align: center; padding: 6rem 2rem 4rem;">
+      <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); color: var(--accent-black); margin-bottom: 0; font-weight: 300; font-family: var(--font-heading); letter-spacing: -0.01em;">
+        Three Creations
       </h2>
-      <p class="lead-text" style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; font-size: 1.05rem; line-height: 1.75;">
-        From traditional Japanese matcha to modern artisanal creations. Each product is crafted with meticulous care,
-        premium ingredients, and an unwavering commitment to quality.
-      </p>
+    </div>
+
+    <!-- Product Grid - Edge to Edge -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;">
+      <!-- GELATO -->
+      <a href="menu.html#gelato" style="position: relative; overflow: hidden; height: 70vh; min-height: 500px; display: block; background-color: var(--bg-beige);">
+        <img
+          src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&q=80"
+          alt="Artisanal Matcha Gelato"
+          style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.7s ease;"
+          onmouseover="this.style.transform='scale(1.08)'; this.style.opacity='0.85'"
+          onmouseout="this.style.transform='scale(1)'; this.style.opacity='1'"
+        >
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(to top, rgba(26,24,22,0.5), transparent 50%);">
+          <h3 style="color: white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.75rem; font-family: var(--font-heading); font-weight: 300; letter-spacing: 0.02em;">
+            Gelato
+          </h3>
+          <p style="color: rgba(255,255,255,0.95); font-size: 1rem; margin: 0; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.85rem;">
+            Five Levels
+          </p>
+        </div>
+      </a>
+
+      <!-- DRINKS -->
+      <a href="menu.html#drinks" style="position: relative; overflow: hidden; height: 70vh; min-height: 500px; display: block; background-color: var(--bg-beige);">
+        <img
+          src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80"
+          alt="Signature Matcha Drinks"
+          style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.7s ease;"
+          onmouseover="this.style.transform='scale(1.08)'; this.style.opacity='0.85'"
+          onmouseout="this.style.transform='scale(1)'; this.style.opacity='1'"
+        >
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(to top, rgba(26,24,22,0.5), transparent 50%);">
+          <h3 style="color: white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.75rem; font-family: var(--font-heading); font-weight: 300; letter-spacing: 0.02em;">
+            Drinks
+          </h3>
+          <p style="color: rgba(255,255,255,0.95); font-size: 1rem; margin: 0; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.85rem;">
+            Signature Series
+          </p>
+        </div>
+      </a>
+
+      <!-- CAKES -->
+      <a href="menu.html#cakes" style="position: relative; overflow: hidden; height: 70vh; min-height: 500px; display: block; background-color: var(--bg-beige);">
+        <img
+          src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80"
+          alt="Celebration Gelato Cakes"
+          style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.7s ease;"
+          onmouseover="this.style.transform='scale(1.08)'; this.style.opacity='0.85'"
+          onmouseout="this.style.transform='scale(1)'; this.style.opacity='1'"
+        >
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(to top, rgba(26,24,22,0.5), transparent 50%);">
+          <h3 style="color: white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.75rem; font-family: var(--font-heading); font-weight: 300; letter-spacing: 0.02em;">
+            Cakes
+          </h3>
+          <p style="color: rgba(255,255,255,0.95); font-size: 1rem; margin: 0; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.85rem;">
+            Celebrations
+          </p>
+        </div>
+      </a>
     </div>
   </section>
 
-  <!-- THREE PRODUCT LINES - Hero Style -->
-  <section style="padding: 0; background-color: var(--bg-cream);">
-    <div class="container" style="max-width: 1400px;">
-      <!-- Section Title -->
-      <div class="text-center" style="padding: 5rem 0 3rem;">
-        <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); color: var(--accent-black); margin-bottom: 1rem; font-weight: 400;">
-          Three Signature Lines
-        </h2>
-        <p style="color: var(--text-secondary); font-size: 1.1rem;">
-          Gelato · Drinks · Cakes
-        </p>
-      </div>
-
-      <!-- Product Grid - Full Width Images -->
-      <div class="grid grid-3" style="gap: 0;">
-        <!-- GELATO -->
-        <a href="menu.html#gelato" style="position: relative; overflow: hidden; height: 500px; display: block;">
-          <img
-            src="images/products/gelato/matcha-gelato-1.jpg"
-            alt="Artisanal Matcha Gelato"
-            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
-            onmouseover="this.style.transform='scale(1.05)'"
-            onmouseout="this.style.transform='scale(1)'"
-          >
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2.5rem; background: linear-gradient(to top, rgba(26,24,22,0.85), transparent); text-align: center;">
-            <h3 style="color: white; font-size: 2rem; margin-bottom: 0.5rem; font-family: var(--font-heading); font-weight: 400;">
-              Matcha Gelato
-            </h3>
-            <p style="color: rgba(255,255,255,0.9); font-size: 1rem; margin: 0;">
-              Five intensity levels
-            </p>
-          </div>
-        </a>
-
-        <!-- DRINKS -->
-        <a href="menu.html#drinks" style="position: relative; overflow: hidden; height: 500px; display: block;">
-          <img
-            src="images/products/drinks/matcha-drink-1.jpg"
-            alt="Signature Matcha Drinks"
-            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
-            onmouseover="this.style.transform='scale(1.05)'"
-            onmouseout="this.style.transform='scale(1)'"
-          >
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2.5rem; background: linear-gradient(to top, rgba(26,24,22,0.85), transparent); text-align: center;">
-            <h3 style="color: white; font-size: 2rem; margin-bottom: 0.5rem; font-family: var(--font-heading); font-weight: 400;">
-              Signature Drinks
-            </h3>
-            <p style="color: rgba(255,255,255,0.9); font-size: 1rem; margin: 0;">
-              Lattes, floats, cheese foam
-            </p>
-          </div>
-        </a>
-
-        <!-- CAKES -->
-        <a href="menu.html#cakes" style="position: relative; overflow: hidden; height: 500px; display: block;">
-          <img
-            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80"
-            alt="Celebration Gelato Cakes"
-            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
-            onmouseover="this.style.transform='scale(1.05)'"
-            onmouseout="this.style.transform='scale(1)'"
-          >
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2.5rem; background: linear-gradient(to top, rgba(26,24,22,0.85), transparent); text-align: center;">
-            <h3 style="color: white; font-size: 2rem; margin-bottom: 0.5rem; font-family: var(--font-heading); font-weight: 400;">
-              Gelato Cakes
-            </h3>
-            <p style="color: rgba(255,255,255,0.9); font-size: 1rem; margin: 0;">
-              For celebrations
-            </p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- THE 5 LEVELS TEASER -->
-  <section style="padding: 6rem 0; background-color: var(--bg-white);">
-    <div class="container-narrow text-center">
-      <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); color: var(--accent-black); margin-bottom: 1.5rem; font-weight: 400;">
-        Five Matcha Levels
+  <!-- THE 5 LEVELS - Elevated Design -->
+  <section style="padding: 10rem 0; background-color: var(--bg-cream);">
+    <div style="max-width: 1000px; margin: 0 auto; text-align: center; padding: 0 2rem;">
+      <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); color: var(--accent-black); margin-bottom: 2rem; font-weight: 300; font-family: var(--font-heading); letter-spacing: -0.01em;">
+        Five Levels of Intensity
       </h2>
-      <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 3rem; max-width: 650px; margin-left: auto; margin-right: auto;">
-        Choose your intensity. From light & floral to ceremonial grade.
+      <p style="color: var(--text-secondary); font-size: clamp(1.1rem, 2vw, 1.35rem); margin-bottom: 5rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7; font-weight: 300;">
+        From jasmine-infused lightness to ceremonial depth.<br>
+        Your matcha, your way.
       </p>
 
-      <!-- Visual representation of 5 levels - Natural gradient -->
-      <div style="display: flex; justify-content: center; gap: 1.25rem; margin: 3.5rem 0; flex-wrap: wrap;">
+      <!-- Visual representation - Minimalist -->
+      <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 4rem 0; flex-wrap: wrap;">
         <div style="text-align: center;">
-          <div style="width: 70px; height: 70px; border-radius: 50%; background-color: var(--matcha-subtle); margin: 0 auto 0.75rem; border: 2px solid var(--matcha-pale);"></div>
-          <span style="font-size: 0.85rem; color: var(--text-light); font-weight: 500;">NO.1</span>
+          <div style="width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, var(--matcha-subtle) 0%, var(--matcha-pale) 100%); margin: 0 auto 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08);"></div>
+          <span style="font-size: 0.75rem; color: var(--text-light); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;">Light</span>
         </div>
+        <div style="width: 40px; height: 1px; background: var(--matcha-pale);"></div>
         <div style="text-align: center;">
-          <div style="width: 70px; height: 70px; border-radius: 50%; background-color: var(--matcha-pale); margin: 0 auto 0.75rem; border: 2px solid var(--matcha-light);"></div>
-          <span style="font-size: 0.85rem; color: var(--text-light); font-weight: 500;">NO.2</span>
+          <div style="width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, var(--matcha-pale) 0%, var(--matcha-light) 100%); margin: 0 auto 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08);"></div>
+          <span style="font-size: 0.75rem; color: var(--text-light); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;">Delicate</span>
         </div>
+        <div style="width: 40px; height: 1px; background: var(--matcha-light);"></div>
         <div style="text-align: center;">
-          <div style="width: 70px; height: 70px; border-radius: 50%; background-color: var(--matcha-light); margin: 0 auto 0.75rem; border: 2px solid var(--matcha-medium);"></div>
-          <span style="font-size: 0.85rem; color: var(--text-light); font-weight: 500;">NO.3</span>
+          <div style="width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, var(--matcha-light) 0%, var(--matcha-medium) 100%); margin: 0 auto 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+          <span style="font-size: 0.75rem; color: var(--text-light); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;">Classic</span>
         </div>
+        <div style="width: 40px; height: 1px; background: var(--matcha-medium);"></div>
         <div style="text-align: center;">
-          <div style="width: 70px; height: 70px; border-radius: 50%; background-color: var(--matcha-medium); margin: 0 auto 0.75rem; border: 2px solid var(--matcha-deep);"></div>
-          <span style="font-size: 0.85rem; color: var(--text-light); font-weight: 500;">NO.4</span>
+          <div style="width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, var(--matcha-medium) 0%, var(--matcha-deep) 100%); margin: 0 auto 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.12);"></div>
+          <span style="font-size: 0.75rem; color: var(--text-light); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;">Rich</span>
         </div>
+        <div style="width: 40px; height: 1px; background: var(--matcha-deep);"></div>
         <div style="text-align: center;">
-          <div style="width: 70px; height: 70px; border-radius: 50%; background-color: var(--matcha-deep); margin: 0 auto 0.75rem; border: 2px solid var(--accent-black);"></div>
-          <span style="font-size: 0.85rem; color: var(--text-light); font-weight: 500;">NO.5</span>
+          <div style="width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, var(--matcha-deep) 0%, var(--accent-black) 100%); margin: 0 auto 1rem; box-shadow: 0 4px 16px rgba(0,0,0,0.15);"></div>
+          <span style="font-size: 0.75rem; color: var(--text-light); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;">Ceremonial</span>
         </div>
       </div>
 
-      <a href="menu.html" class="btn btn-primary">Explore Menu</a>
-    </div>
-  </section>
-
-  <!-- CRAFT & QUALITY -->
-  <section style="padding: 0; background-color: var(--bg-cream);">
-    <div class="container" style="max-width: 1400px;">
-      <div class="grid grid-2" style="align-items: stretch; gap: 0;">
-        <!-- Large Image -->
-        <div style="min-height: 500px;">
-          <img
-            src="images/about/craft-detail.jpg"
-            alt="Artisanal craft and premium ingredients"
-            style="width: 100%; height: 100%; object-fit: cover;"
-          >
-        </div>
-        <!-- Content -->
-        <div style="padding: 4rem 3rem; display: flex; flex-direction: column; justify-content: center; background-color: var(--bg-warm);">
-          <h2 style="font-size: clamp(1.75rem, 3.5vw, 2.5rem); color: var(--accent-black); margin-bottom: 1.5rem; font-weight: 400;">
-            Crafted with Care
-          </h2>
-          <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.75; margin-bottom: 1.5rem;">
-            Japanese stone-ground matcha. French artisan techniques. Every creation reflects our commitment to quality and precision.
-          </p>
-          <p style="color: var(--text-light); font-size: 1rem; line-height: 1.7; margin-bottom: 2rem;">
-            This is matcha, transformed into artisanal indulgence.
-          </p>
-          <div>
-            <a href="about.html" class="btn btn-outline">Our Story</a>
-          </div>
-        </div>
+      <div style="margin-top: 5rem;">
+        <a href="menu.html" class="btn btn-primary">Discover Your Level</a>
       </div>
     </div>
   </section>
 
-  <!-- LOCATION CTA -->
-  <section style="padding: 6rem 0; background-color: var(--bg-white);">
-    <div class="container" style="max-width: 900px;">
-      <div class="text-center" style="margin-bottom: 3rem;">
-        <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); color: var(--accent-black); margin-bottom: 1rem; font-weight: 400;">
-          Visit Our Cupertino Location
+  <!-- CRAFT & QUALITY - Full Screen -->
+  <section style="position: relative; height: 90vh; min-height: 600px; overflow: hidden; background-color: var(--bg-white);">
+    <img
+      src="https://images.unsplash.com/photo-1611564226184-1e661cb36c5e?w=1920&q=85"
+      alt="Artisanal matcha craftsmanship"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+    >
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(26,24,22,0.75) 0%, transparent 70%); z-index: 2;"></div>
+    <div style="position: relative; z-index: 3; height: 100%; display: flex; align-items: center; padding: 0 4rem;">
+      <div style="max-width: 600px;">
+        <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); color: white; margin-bottom: 2rem; font-weight: 300; font-family: var(--font-heading); line-height: 1.2;">
+          Precision.<br>
+          Quality.<br>
+          Craft.
         </h2>
-        <p style="color: var(--text-secondary); font-size: 1.1rem;">
-          Refined simplicity. Intentional detail.
+        <p style="color: rgba(255,255,255,0.95); font-size: clamp(1.1rem, 2vw, 1.35rem); line-height: 1.7; margin-bottom: 2.5rem; font-weight: 300;">
+          Japanese stone-ground matcha meets French artisan techniques. Every creation is a testament to our uncompromising standards.
         </p>
+        <a href="about.html" class="btn btn-outline" style="background-color: transparent; color: white; border-color: white;">Learn Our Story</a>
       </div>
+    </div>
+  </section>
 
-      <!-- Store Image -->
-      <img
-        src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&q=80"
-        alt="MATCHA TOWN Cupertino interior"
-        style="width: 100%; height: 400px; object-fit: cover; border-radius: 0; margin-bottom: 2.5rem;"
-      >
-
-      <div class="text-center">
-        <a href="location.html" class="btn btn-primary" style="margin-right: 1rem;">Get Directions</a>
-        <a href="menu.html" class="btn btn-outline">View Menu</a>
+  <!-- LOCATION CTA - Minimal -->
+  <section style="padding: 10rem 0 12rem; background-color: var(--bg-cream);">
+    <div style="max-width: 700px; margin: 0 auto; text-align: center; padding: 0 2rem;">
+      <h2 style="font-size: clamp(2.5rem, 5vw, 3.5rem); color: var(--accent-black); margin-bottom: 2rem; font-weight: 300; font-family: var(--font-heading); letter-spacing: -0.01em;">
+        Visit Us
+      </h2>
+      <p style="color: var(--text-secondary); font-size: clamp(1.15rem, 2vw, 1.4rem); line-height: 1.7; margin-bottom: 1rem; font-weight: 300;">
+        Cupertino, California
+      </p>
+      <p style="color: var(--text-light); font-size: 1rem; margin-bottom: 3.5rem;">
+        Monday – Friday: 10am – 9pm<br>
+        Saturday – Sunday: 9am – 10pm
+      </p>
+      <div>
+        <a href="location.html" class="btn btn-primary">Get Directions</a>
       </div>
     </div>
   </section>
