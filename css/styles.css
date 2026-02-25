@@ -5,27 +5,31 @@
 
 /* ===== CSS VARIABLES (Design Tokens) ===== */
 :root {
-  /* Color Palette - Refined Minimalism (Store-inspired) */
-  --bg-cream: #FAF7F4;           /* Soft cream background */
-  --bg-warm: #F5F0EC;            /* Warm secondary background */
-  --bg-beige: #E8E3DD;           /* Beige accent background */
+  /* Luxury Color Palette - Inspired by Chanel, Hermès, Bottega Veneta */
+  --bg-ivory: #FEFDFB;           /* Luxe ivory - primary background */
+  --bg-cream: #F8F6F3;           /* Soft cream - secondary */
+  --bg-warm: #F0EDE8;            /* Warm neutral - tertiary */
+  --bg-stone: #E5E2DD;           /* Stone accent */
   --bg-white: #FFFFFF;
 
-  --text-primary: #3D3430;       /* Deep warm brown */
-  --text-secondary: #706A65;     /* Medium warm grey */
-  --text-light: #A89F99;         /* Light warm grey */
+  --text-primary: #0A0A0A;       /* Deep luxury black */
+  --text-secondary: #605D5A;     /* Refined grey-brown */
+  --text-light: #9D9A96;         /* Light warm grey */
+  --text-muted: #C4C1BD;         /* Muted accent */
 
-  /* Matcha Colors - Natural & Refined */
-  --matcha-deep: #5C7A5F;        /* Deep natural matcha */
-  --matcha-medium: #7A9B7F;      /* Authentic matcha tone */
-  --matcha-light: #A8C4A5;       /* Light matcha */
-  --matcha-pale: #D4E0D3;        /* Pale matcha for backgrounds */
-  --matcha-subtle: #E8EDE7;      /* Subtle matcha hint */
+  /* Matcha Colors - Sophisticated & Natural */
+  --matcha-deep: #4A5F4D;        /* Refined forest matcha */
+  --matcha-medium: #6B7F6E;      /* Elegant matcha */
+  --matcha-light: #98A89A;       /* Soft matcha */
+  --matcha-pale: #D1D8D2;        /* Whisper matcha */
+  --matcha-subtle: #E8EBE9;      /* Barely-there matcha */
 
-  /* Accent Colors - Wood & Earth Tones */
-  --accent-wood: #B5A592;        /* Warm wood tone */
-  --accent-walnut: #8B7D6B;      /* Rich walnut */
-  --accent-black: #1A1816;       /* True black for emphasis */
+  /* Luxury Accents - Gold & Earth */
+  --accent-gold: #C9A86A;        /* Champagne gold */
+  --accent-gold-dark: #B89857;   /* Rich gold */
+  --accent-bronze: #A0826D;      /* Warm bronze */
+  --accent-black: #0A0A0A;       /* Absolute black */
+  --accent-charcoal: #2D2D2D;    /* Soft charcoal */
 
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, serif;
