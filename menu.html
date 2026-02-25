@@ -79,6 +79,13 @@
     .product-card {
       cursor: pointer;
     }
+
+    /* Gelato images sizing - make them smaller */
+    .product-card[data-category="gelato"] .card-image {
+      max-height: 280px;
+      object-fit: contain;
+      object-position: center;
+    }
   </style>
 </head>
 <body>
